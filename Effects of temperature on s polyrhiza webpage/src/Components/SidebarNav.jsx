@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Menu, MenuItem, Sidebar } from 'react-pro-sidebar'
-imoprt sectionl
 
 const sections = [
   //{ id: 'introduction', label: 'Introduction' },
