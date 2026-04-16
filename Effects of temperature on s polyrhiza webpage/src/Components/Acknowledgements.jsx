@@ -52,21 +52,8 @@ function Acknowledgements() {
           boxShadow: "var(--shadow)",
         }}
       >
-        <p className="eyebrow">Acknowledgements</p>
-        <h2 style={{ textAlign: "center" }}>
-          Support, guidance, and collaboration
-        </h2>
-        <p
-          style={{
-            maxWidth: 620,
-            textAlign: "center",
-            marginLeft: "auto",
-            marginRight: "auto",
-          }}
-        >
-          This project was strengthened by faculty guidance, institutional
-          support, and the classmates who helped prepare the experiment.
-        </p>
+        <p className="eyebrow">Support, guidance, and collaboration</p>
+        <h2 style={{ textAlign: "center" }}>Acknowledgements</h2>
       </div>
 
       <div className="ack-card">

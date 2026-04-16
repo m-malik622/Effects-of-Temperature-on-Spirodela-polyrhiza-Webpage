@@ -30,7 +30,7 @@ function SunBadge() {
   );
 }
 
-function Conclusion({feedbackLink }) {
+function Conclusion({ feedbackLink }) {
   return (
     <section className="section conclusion-section" id="conclusion">
       <div
@@ -50,11 +50,9 @@ function Conclusion({feedbackLink }) {
         }}
       >
         <p className="eyebrow">Conclusion</p>
-        <h2 style={{ textAlign: "center" }}>Discussion, methylation, and climate stress</h2>
-        <p style={{ maxWidth: 620, textAlign: "center", marginLeft: "auto", marginRight: "auto" }}>
-          The ending should connect growth trends, epigenetic change, and the
-          larger climate context that shaped the experiment.
-        </p>
+        <h2 style={{ textAlign: "center" }}>
+          Discussion, methylation, and climate stress
+        </h2>
       </div>
 
       <div className="conclusion-grid">
