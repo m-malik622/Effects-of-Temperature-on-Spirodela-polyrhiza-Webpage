@@ -30,23 +30,6 @@ const introductionLinks = [
   },
 ]
 
-const methodsSteps = [
-  {
-    title: 'Collect',
-    subtitle: 'Temperature treatments and plant material',
-    body: 'Place equal colonies of Spirodela polyrhiza into control, cold, and heat conditions before measuring growth and frond health.',
-  },
-  {
-    title: 'Record',
-    subtitle: 'Photos, counts, and observations',
-    body: 'Document each replicate with side-by-side images and copy the key notes into the final report so the visual evidence matches the dataset.',
-  },
-  {
-    title: 'Compare',
-    subtitle: 'Analyze patterns across treatments',
-    body: 'Use the same visual logic in graphs and labels so the temperature effects are easy to read at a glance.',
-  },
-]
 
 const resultCards = [
   {
@@ -101,7 +84,7 @@ function App() {
         acknowledgementsLink={acknowledgementsLink}
       />
       <Introduction links={introductionLinks} />
-      <Methods steps={methodsSteps} />
+      <Methods/>
       <Results cards={resultCards} />
       <Conclusion
         links={conclusionLinks}

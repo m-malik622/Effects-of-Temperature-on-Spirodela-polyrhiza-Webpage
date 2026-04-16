@@ -4,7 +4,9 @@ function Hero({ sectionLinks, feedbackLink, acknowledgementsLink }) {
   return (
     <section className="hero-section" id="top">
       <div className="hero-copy">
-        <p className="eyebrow">Research project website</p>
+        <a className="eyebrow" href='https://mmalik.space/'>Mujtaba Malik; </a>
+        <a className="eyebrow" href=''>Reece Fulton, </a>
+        <a className="eyebrow" href=''>Asiah Moore</a>
         <h1>Effects of temperature on Spirodela polyrhiza</h1>
         <p className="hero-lead">
           Explore how a tiny floating freshwater plant responds to cold and heat stress through
@@ -50,9 +52,9 @@ function Hero({ sectionLinks, feedbackLink, acknowledgementsLink }) {
           </div>
         </div>
 
-        <div className="hero-orbit hero-orbit-cold">Cold</div>
-        <div className="hero-orbit hero-orbit-neutral">Control</div>
-        <div className="hero-orbit hero-orbit-heat">Heat</div>
+        <div className="hero-orbit hero-orbit-cold">Survival in extreme Cold</div>
+        <div className="hero-orbit hero-orbit-neutral">Aids in Bioremediation</div>
+        <div className="hero-orbit hero-orbit-heat">Protein Dense</div>
       </div>
     </section>
   )
