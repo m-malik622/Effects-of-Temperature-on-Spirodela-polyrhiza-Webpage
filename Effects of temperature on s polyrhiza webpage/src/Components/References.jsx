@@ -2,18 +2,18 @@ function References({ references }) {
   return (
     <section className="section references-section" id="references">
       <div className="section-heading">
-        <p className="eyebrow">References</p>
-        <h2>All source links in one place</h2>
-        <p>Use DOI links here so the citations stay durable and easy to verify later.</p>
+        <h2>References</h2>
       </div>
 
       <div className="reference-list">
         {references.map((reference) => (
-          <article className="reference-item" key={reference.doi}>
+          <article className="reference-item" key={reference.href || reference.citation}>
             <p>{reference.citation}</p>
-            <a href={`https://doi.org/${reference.doi}`} target="_blank" rel="noreferrer">
-              doi:{reference.doi}
-            </a>
+            {reference.href ? (
+              <a href={reference.href} target="_blank" rel="noreferrer">
+                {reference.label || reference.href}
+              </a>
+            ) : null}
           </article>
         ))}
       </div>

@@ -10,13 +10,12 @@ function Methods() {
       <MethodsTimeline />
       <div className="method-footnote">
         <a
-          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          href="https://ij.imjoy.io/"
           target="_blank"
           rel="noreferrer"
         >
-          Link to image JS reference
+          Link to image JS online playground
         </a>
-        <span>Swap this for your portfolio tree library if you want the exact reusable component.</span>
       </div>
     </section>
   )
