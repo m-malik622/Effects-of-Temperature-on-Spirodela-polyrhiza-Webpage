@@ -18,6 +18,7 @@ const sectionLinks = [
 
 const feedbackLink = "https://docs.google.com/forms/d/e/1FAIpQLScWRUHsgwa5GwtCVVkEQ6QS5NY4GruPbPd29ZxoH-Pm3C_l0A/viewform?usp=publish-editor"
 
+/*
 const introductionLinks = [
   {
     label: 'Global warming in freshwater',
@@ -29,18 +30,7 @@ const introductionLinks = [
     external: true,
   },
 ]
-const conclusionLinks = [
-  {
-    label: 'Related paper 1',
-    href: 'https://doi.org/10.1007/s00425-021-03764-4',
-    external: true,
-  },
-  {
-    label: 'Related paper 2',
-    href: 'https://doi.org/10.1016/j.ecoenv.2019.05.085',
-    external: true,
-  },
-]
+*/
 
 const references = [
   {
@@ -130,11 +120,9 @@ function App() {
           sectionLinks={sectionLinks}
           feedbackLink={feedbackLink}
         />
-        <Introduction links={introductionLinks} />
         <Methods/>
         <Results />
         <Conclusion
-          links={conclusionLinks}
           feedbackLink={feedbackLink}
         />
         <Acknowledgements />

@@ -4,20 +4,20 @@ import { useState } from 'react'
 const ecosystemStates = {
   cooling: {
     title: 'Cooling water',
-    summary: 'Lower temperatures slow metabolism and can delay frond expansion.',
-    stream: 'Blue arrows dominate as the pond loses daytime heat.',
+    summary: 'Lower temperatures can slow metabolism, change membrane behavior, and delay growth.',
+    stream: 'Cold stress alters enzyme activity and plant function in freshwater habitats.',
     stress: 'Cold stress marker',
   },
   balance: {
     title: 'Balanced spring water',
-    summary: 'Moderate conditions keep duckweed photosynthesizing and multiplying steadily.',
-    stream: 'Green leaf cover stays stable around the surface.',
+    summary: 'Temperature is one of the ecological drivers that shapes plant growth and gene expression.',
+    stream: 'A stable pond can still shift as the climate changes over time.',
     stress: 'Control condition',
   },
   heating: {
     title: 'Warming pool',
-    summary: 'Higher temperatures can push the plant beyond its preferred growth range.',
-    stream: 'Amber heat spreads through the water column and the canopy thins.',
+    summary: 'Higher temperatures can push duckweed beyond its preferred growth range.',
+    stream: 'Heat stress can affect membrane properties, enzymes, and water-tissue viscosity.',
     stress: 'Heat stress marker',
   },
 }
@@ -30,10 +30,11 @@ function Introduction({ links }) {
     <section className="section introduction-section" id="introduction">
       <div className="section-heading">
         <p className="eyebrow">Introduction</p>
-        <h2>Why temperature matters in a freshwater ecosystem</h2>
+        <h2>Why temperature matters in a changing freshwater ecosystem</h2>
         <p>
-          The diagram below gives a simple interactive view of how warming and cooling can shift
-          plant growth, surface shade, and stress responses in a pond or slow-moving water body.
+          Global climate change affects air quality, food availability, water quality, and
+          temperature. In freshwater systems, those shifts can alter plant growth, stress
+          responses, and the way genes are expressed over time.
         </p>
       </div>
 
@@ -61,11 +62,11 @@ function Introduction({ links }) {
             <div className="diagram-layer diagram-thermo">
               <span>{active.stress}</span>
             </div>
-            <div className="diagram-copy">
-              <strong>{active.title}</strong>
-              <p>{active.summary}</p>
-              <p>{active.stream}</p>
-            </div>
+          <div className="diagram-copy">
+            <strong>{active.title}</strong>
+            <p>{active.summary}</p>
+            <p>{active.stream}</p>
+          </div>
           </div>
 
           <div className="diagram-links">
@@ -87,10 +88,17 @@ function Introduction({ links }) {
           <div className="info-card">
             <h3>What to notice</h3>
             <ul>
-              <li>Floating leaves make the plant a sensitive indicator of environmental change.</li>
-              <li>Temperature can affect leaf density, color, and overall coverage.</li>
-              <li>The site uses blue for cold stress and amber for heat stress throughout.</li>
+              <li>Temperature changes membrane properties, enzyme activity, and transport in plants.</li>
+              <li>Spirodela polyrhiza, or greater duckweed, grows quickly in slow-moving freshwater.</li>
+              <li>This study focuses on longer-term temperature stress instead of only short-term effects.</li>
             </ul>
+          </div>
+          <div className="info-card">
+            <h3>Research gap</h3>
+            <p>
+              A major gap in the literature is how climate change affects aquatic plants over longer
+              periods and how those responses may be inherited across generations.
+            </p>
           </div>
         </div>
       </div>

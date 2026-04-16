@@ -30,7 +30,7 @@ function SunBadge() {
   );
 }
 
-function Conclusion({ links, feedbackLink }) {
+function Conclusion({feedbackLink }) {
   return (
     <section className="section conclusion-section" id="conclusion">
       <div
@@ -123,15 +123,6 @@ function Conclusion({ links, feedbackLink }) {
           >
             Give feedback
           </a>
-          <ul className="link-list">
-            {links.map((link) => (
-              <li key={link.href}>
-                <a href={link.href} target="_blank" rel="noreferrer">
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </section>
